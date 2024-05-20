@@ -1,0 +1,9 @@
+a.nav-link.active-link{
+    color: var(--primary-color);
+    font-weight: bold;
+
+}
+
+a.nav-link{
+    color:var(--secondary-color);
+}

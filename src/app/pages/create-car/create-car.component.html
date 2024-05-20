@@ -1,0 +1,36 @@
+<div class="form">
+
+  <div class="input-group mb-3">
+      <label class="input-group-text" id="inputGroup-sizing-default" for="id">ID:</label>
+      <input class="form-control" type="number" id="id" [(ngModel)]="car.id">
+    </div>
+    <div class="input-group mb-3">
+      <label class="input-group-text" id="inputGroup-sizing-default" for="model">Model:</label>
+      <input class="form-control" type="text" id="model" [(ngModel)]="car.model">
+    </div>
+    <div class="input-group mb-3">
+      <label class="input-group-text" id="inputGroup-sizing-default" for="price">Price:</label>
+      <input class="form-control" type="number" id="price" [(ngModel)]="car.price">
+    </div>
+    <div class="input-group mb-3">
+      <label class="input-group-text" id="inputGroup-sizing-default" for="category_id">Category ID:</label>
+      <input class="form-control" type="number" id="category_id" [(ngModel)]="car.category_id">
+    </div>
+    <div class="input-group mb-3">
+      <label class="input-group-text" id="inputGroup-sizing-default" for="status">Status:</label>
+      <input class="form-control" type="number" id="status" [(ngModel)]="car.status">
+    </div>
+    <div class="input-group mb-3">
+      <label class="input-group-text" id="inputGroup-sizing-default" for="createdAt">Created At:</label>
+      <input class="form-control" type="datetime-local" id="createdAt" [(ngModel)]="car.createdAt">
+    </div>
+    <div class="input-group mb-3">
+      <label class="input-group-text" id="inputGroup-sizing-default" for="updatedAt">Updated At:</label>
+      <input class="form-control" type="datetime-local" id="updatedAt" [(ngModel)]="car.updatedAt">
+    </div>
+    <div class="input-group mb-3">
+      <label class="input-group-text" id="inputGroup-sizing-default" for="number_plate">Number Plate:</label>
+      <input class="form-control" type="text" id="number_plate" [(ngModel)]="car.number_plate">
+    </div>
+    <button (click)="onSubmit()">Submit</button>
+</div>

@@ -11,7 +11,9 @@ export class MenupageComponent implements OnInit {
  constructor(private param:ActivatedRoute, private service:OrderDetailsService){}
  getMenuId:any;
  menuData:any;
+ dumamay:any;
  ngOnInit(): void {
+    this.dumamay = 1
      this.getMenuId = this.param.snapshot.paramMap.get('id');
      console.log(this.getMenuId," get menu");
      if(this.getMenuId){
@@ -20,6 +22,15 @@ export class MenupageComponent implements OnInit {
         })
       
      }
+ }
+
+ changeQuantity(duma : boolean){
+  if(! duma && this.dumamay <= 1 )
+      return
+  if(duma)
+    ++this.dumamay
+  else
+    --this.dumamay
  }
 
   

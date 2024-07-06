@@ -1,32 +1,90 @@
-<div class="container mt-5 mb-5">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+<div class="container mt-5 mb-5" >
     <div class="row">
+        <div class="">
+
+            <a routerLink="../../menu" class="btn btn-sm  mb-3 bgc">Back</a>
+        </div>
+        <div class="col-lg-6" *ngIf="menuData">
+            <img class="img75" src="{{menuData[0].foodImg}}">
+            <!-- <h1 class="mt-2">{{menuData[0].foodName}}</h1>
+            <p>{{menuData[0].foodDetails}}</p>
+            <p>{{menuData[0].foodPrice }}</p> -->
+            <div class="nothing">
+
+            </div>
+        </div>
 
         <div class="col-lg-6" *ngIf="menuData">
-            <div class="">
-
-                <a routerLink="../../menu" class="btn btn-sm btn-dark mb-3">Back</a>
+            <div class="title fs22">
+                <p>
+                    {{menuData[0].foodName}}
+                </p>
             </div>
-            <img src="{{menuData[0].foodImg}}">
-            <h1 class="mt-2">{{menuData[0].foodName}}</h1>
-            <p>{{menuData[0].foodDetails}}</p>
-            <p>{{menuData[0].foodPrice|currency }}</p>
-        </div>
-        <div class="col-lg-6">
+            <div class="price fs22 mgt24">
+                {{menuData[0].foodPrice}}
+            </div>
+            <div class="size fs22 mgt24">
+                <div class="row grSize">
+                    <p fs22 style="max-height: 8px;">Size</p>
+                    <div class="col-lg-3 ">
+                        <button class="btn btn-md btn-dark-fake mt-3">Small 6"</button>
+                    </div>
+                    <div class="col-lg-3 ">
+                        <button class="btn btn-md btn-dark-fake mt-3">Medium 9"</button>
+                    </div>
+                    <div class="col-lg-3 ">
+                        <button class="btn btn-md btn-dark-fake mt-3">Large 12"</button>
+                    </div>
+                </div>
+            </div>
 
-            <form>
-                <h1>Enter Your Details</h1>
-                <div>
-                    <input class="form-control" type="text" placeholder="Enter Your Fullname">
-                </div>
-                <div>
-                    <input class="form-control" type="text" placeholder="Enter Your Phone Number">
-                </div>
-                <div>
-                    <input class="form-control" type="email" placeholder="Enter Your Email Address">
-                </div>
-                <button class="btn btn-md btn-dark mt-3">Place Order</button>
-            </form>
+            <div class="duma mgt24 fs22">
+                <div class="row"  >
+                    <p fs22>Quantity</p>
+                   <div class="col-lg-4">
+                    <div class="row bdrd">
 
+                        <div class="col-lg-4 itemIcon" (click)="changeQuantity(false)">
+                            <i class="fas fa-minus"></i>
+                        </div>
+
+                        <div class="col-lg-4 itemIcon">
+                            {{dumamay}}
+                        </div>
+
+                        <div class="col-lg-4 itemIcon" (click)="changeQuantity(true)">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+
+                   </div>
+            </div>
+
+            <div class="row mgt24">
+                <div class="col-lg-6">
+                    <button class="btn btn-dark">Buy now</button>
+                </div>
+                <div class="col-lg-6">
+                    <button class="btn btn-light">Add to cart</button>
+                </div>
+            </div>
+            <div class="description mgt24"> 
+                <div class="description1">Description</div>
+                <ul class="list scrollbar">
+                    <li class="item">{{menuData[0].foodDetails}}</li>
+                </ul>
+            </div>
+            <div class="note mgt24">
+                <div class="noteContent">
+                    Note
+                </div>
+                <textarea class="mgt8" name="txtComment" id="txtComment" rows="3" cols="60" placeholder="Write a note here"></textarea>
+            </div>
         </div>
     </div>
+</div>
+
+
 </div>

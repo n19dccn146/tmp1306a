@@ -5,7 +5,113 @@ form{
     
 }
 
-img{
+.img75{
     width: 75%;
     height: 75%;
+}
+
+.img-custom {
+    width: 75%;
+    height: 75%;
+}
+.container-custom {
+    max-width: 1750px !important;
+}
+
+.btn-dark {
+    width: 105%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: inherit;
+    border: solid;
+    border-width: 1px;
+}
+
+.size {
+    margin-bottom :16px
+}
+
+.btn-dark-fake {
+    width: 105%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: inherit;
+    border: solid;
+    border-width: 1px;
+}
+
+.btn-light {
+    width: 105%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: inherit;
+    border: solid;
+    border-width: 1px;
+}
+
+.mx85 {
+    max-width: 85px;
+}
+
+.fs22 {
+    font-size: 22px;
+}
+
+.mgt24 {
+    margin-top: 24px;
+}
+
+.bgc{
+    background-color: #212529;
+    color: #fff;
+}
+
+.fs20 {
+    font-size: 20px;
+}
+
+.description {
+    color: #5C5C5C;
+    font-size: 20px;
+}
+
+.description1 {
+    font-style: bold;
+}
+
+.item {
+    font-style: italic;
+}
+
+.bdrd {
+    border: solid;
+    border-width: 1px ;
+    border-color: rgb(184, 179, 179);
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    background-position-x: center;
+    background-position-y: center;
+    justify-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    margin-right: 8px;
+    max-height: 40px;
+}
+.nothing {
+    min-height: 200px;
+}
+
+
+
+textarea {
+    white-space: normal;
+    text-align: justify;
+    -moz-text-align-last: center; /* Firefox 12+ */
+    text-align-last: center;
+}
+
+.mgt8{
+    margin-top: 8px;
 }
